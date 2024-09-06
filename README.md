@@ -1,0 +1,1 @@
+Svelte port of https://github.com/BartoszJarocki/cv/ with some modifications
