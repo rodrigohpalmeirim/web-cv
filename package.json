@@ -6,6 +6,7 @@
     "dev": "vite dev --open --host",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "sudo docker-compose up -d --no-deps --build web-cv",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint ."

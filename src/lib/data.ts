@@ -3,6 +3,7 @@ export const RESUME_DATA = {
     initials: "RP",
     location: "Lisbon, Portugal, Earth, GMT+0",
     locationLink: "https://www.google.com/maps/place/Lisbon",
+    birthday: "July 14, 2000",
     about:
         "Computer Science engineer and full-stack developer with a passion for simplicity and efficiency with attention to detail.",
     summary:
@@ -40,10 +41,10 @@ export const RESUME_DATA = {
         {
             company: "Truewind - now Axians",
             link: "https://www.axians.pt/",
-            badges: ["Full-Stack"],
+            badges: ["Full-stack"],
             title: "Junior Developer",
             start: "2024",
-            end: "2024",
+            end: "present",
             description: "After my internship, I was hired as a junior developer at Truewind (which has since been acquired by Axians), where I work in research and in the development of full-stack applications.",
         },
         {
@@ -65,8 +66,8 @@ export const RESUME_DATA = {
         "Python",
         "C/C++",
         "C#",
-        "SQL",
         "Unity",
+        "SQL",
         "Java",
         "Android",
         "Linux",
@@ -96,8 +97,15 @@ export const RESUME_DATA = {
             description: "A web app that allows you to create, simulate and visualize Turing machines. It aims to be a simple and intuitive tool for students and enthusiasts of automata theory.",
             logo: "https://raw.githubusercontent.com/rodrigohpalmeirim/automaton-simulator/master/public/logo-small.png",
             link: {
-                label: "github/rodrigohpalmeirim/automaton-simulator",
-                href: "https://github.com/rodrigohpalmeirim/automaton-simulator",
+                href: "https://rodrigohpalmeirim.github.io/automaton-simulator/",
+            },
+        },
+        {
+            title: "Movie Night",
+            techStack: [ "SvelteKit", "TailwindCSS", "socket.io", "WebTorrent" ],
+            description: "A web app that allows you to watch movies with friends in real-time with a synchronized player. It uses WebTorrent for peer-to-peer streaming and socket.io for real-time communication. (Currently in development)",
+            link: {
+                href: "https://movie-night.rodlabs.dev/",
             },
         },
         {
@@ -105,10 +113,8 @@ export const RESUME_DATA = {
             techStack: [ "SvelteKit", "TailwindCSS" ],
             description: "A web app that allows you to visualize the prices for all the round-trip flight combinations.",
             link: {
-                label: "github/rodrigohpalmeirim/trip-finder",
-                href: "https://github.com/rodrigohpalmeirim/trip-finder",
+                href: "https://flights.rodlabs.dev",
             },
-            active: false,
         },
         {
             title: "1-2-1",
@@ -121,25 +127,13 @@ export const RESUME_DATA = {
             active: false,
         },
         {
-            title: "Movie Night",
-            techStack: [ "SvelteKit", "TailwindCSS", "socket.io", "WebTorrent" ],
-            description: "A web app that allows you to watch movies with friends in real-time with a synchronized player. It uses WebTorrent for peer-to-peer streaming and socket.io for real-time communication. (Currently in development)",
-            link: {
-                label: "github/rodrigohpalmeirim/movie-night",
-                href: "https://github.com/rodrigohpalmeirim/movie-night/tree/svelte",
-            },
-            active: false,
-        },
-        {
             title: "Passhash",
             techStack: [ "HTML", "CSS", "JavaScript" ],
-            description: "A simple cool-looking web app for generating secure passwords by hashing simpler passwords",
+            description: "A simple cool-looking web app for generating secure passwords by hashing simpler passwords.",
             logo: "https://passhash.rodlabs.dev/favicon.ico",
             link: {
-                label: "github/rodrigohpalmeirim/passhash",
-                href: "https://github.com/rodrigohpalmeirim/passhash",
+                href: "https://passhash.rodlabs.dev",
             },
-            active: false,
         },
     ],
 } as const;

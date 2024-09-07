@@ -29,15 +29,13 @@
   class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16"
 >
   <section class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-    <div class="flex items-center justify-between">
+    <div class="flex justify-between gap-4">
       <div class="flex-1 space-y-1.5">
         <h1 class="text-2xl font-bold">{RESUME_DATA.name}</h1>
         <p class="max-w-md text-pretty font-mono text-sm text-muted-foreground">
           {RESUME_DATA.about}
         </p>
-        <p
-          class="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground"
-        >
+        <p class="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
           <a
             class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
             href={RESUME_DATA.locationLink}
@@ -136,20 +134,13 @@
         <Card>
           <CardHeader>
             <div class="flex items-center justify-between gap-x-2 text-base">
-              <h3
-                class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none"
-              >
+              <h3 class="inline-flex items-center gap-x-2 gap-y-1 font-semibold leading-none flex-wrap">
                 <a class="hover:underline" href={work.link}>
                   {work.company}
                 </a>
-
                 <span class="inline-flex gap-1 flex-wrap">
                   {#each work.badges as badge}
-                    <Badge
-                      variant="secondary"
-                      class="align-middle text-xs"
-                      key={badge}
-                    >
+                    <Badge variant="secondary" class="align-middle text-xs" key={badge}>
                       {badge}
                     </Badge>
                   {/each}
@@ -176,7 +167,7 @@
         <Card>
           <CardHeader>
             <div class="flex items-center justify-between gap-x-2 text-base">
-              <h3 class="font-semibold leading-none">
+              <h3 class="font-semibold leading-tight">
                 {education.school}
               </h3>
               <div class="text-sm tabular-nums text-gray-500 whitespace-nowrap">
@@ -184,7 +175,7 @@
               </div>
             </div>
           </CardHeader>
-          <CardContent class="mt-2">{education.degree}</CardContent>
+          <CardContent class="mt-1">{education.degree}</CardContent>
         </Card>
       {/each}
     </Section>
