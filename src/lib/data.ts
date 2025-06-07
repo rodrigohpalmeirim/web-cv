@@ -1,7 +1,7 @@
 export const RESUME_DATA = {
     name: "Rodrigo Palmeirim",
     initials: "RP",
-    location: "Lisbon, Portugal, Earth, GMT+0",
+    location: "Lisbon, Portugal, Earth, WET",
     locationLink: "https://www.google.com/maps/place/Lisbon",
     birthday: "July 14, 2000",
     about:
@@ -26,7 +26,7 @@ export const RESUME_DATA = {
         },
         {
             school: "Norwegian University of Science and Technology",
-            degree: "Eramus+ Exchange Student in Computer Science and Engineering",
+            degree: "Erasmus+ Exchange Student in Computer Science and Engineering",
             start: "2022",
             end: "2022",
         },
@@ -42,10 +42,10 @@ export const RESUME_DATA = {
             company: "Truewind - now Axians",
             link: "https://www.axians.pt/",
             badges: ["Full-stack"],
-            title: "Junior Developer",
+            title: "Developer",
             start: "2024",
-            end: "present",
-            description: "After my internship, I was hired as a junior developer at Truewind (which has since been acquired by Axians), where I work in research and in the development of full-stack applications.",
+            end: "2024",
+            description: "After my internship, I was hired as a developer at Truewind (which has since been acquired by Axians), where I work in research and in the development of full-stack applications.",
         },
         {
             company: "Truewind",
@@ -61,6 +61,7 @@ export const RESUME_DATA = {
         "JavaScript/TypeScript",
         "Svelte/SvelteKit",
         "React.js/Next.js",
+        "React Native",
         "Node.js",
         "Rust",
         "Python",
@@ -90,6 +91,7 @@ export const RESUME_DATA = {
                 label: "github/rt-evil-inc/gira",
                 href: "https://github.com/rt-evil-inc/gira",
             },
+            year: "2023-now",
         },
         {
             title: "Automaton Simulator",
@@ -99,6 +101,7 @@ export const RESUME_DATA = {
             link: {
                 href: "https://rodrigohpalmeirim.github.io/automaton-simulator/",
             },
+            year: "2020",
         },
         {
             title: "Movie Night",
@@ -107,6 +110,7 @@ export const RESUME_DATA = {
             link: {
                 href: "https://movie-night.rodlabs.dev/",
             },
+            year: "2020-2021",
         },
         {
             title: "Trip Finder",
@@ -115,6 +119,7 @@ export const RESUME_DATA = {
             link: {
                 href: "https://flights.rodlabs.dev",
             },
+            year: "2023",
         },
         {
             title: "1-2-1",
@@ -125,6 +130,7 @@ export const RESUME_DATA = {
                 href: "https://github.com/rodrigohpalmeirim/1-2-1",
             },
             active: false,
+            year: "2020",
         },
         {
             title: "Passhash",
@@ -134,6 +140,7 @@ export const RESUME_DATA = {
             link: {
                 href: "https://passhash.rodlabs.dev",
             },
+            year: "2022",
         },
     ],
 } as const;

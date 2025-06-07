@@ -14,40 +14,46 @@
   export let link = "";
   export let logo: string | null = null;
   export let active = true;
+  export let year: string | number = "";
 </script>
 
 <Card class="flex flex-col overflow-hidden border border-muted p-3">
   <CardHeader class="">
     <div class="space-y-1">
       <CardTitle class="text-base">
-        {#if link}
-          <a
-            href={link}
-            target="_blank"
-            class="inline-flex items-center gap-1 hover:underline"
-          >
-            {#if logo}
-              <img
-                src={logo}
-                alt={title}
-                class="w-6 h-6 print:hidden"
-              />
-            {/if}
-            {title}
-            {#if active} <span class="size-1 rounded-full bg-green-500"></span> {/if}
-          </a>
-        {:else}
-          <div class="flex gap-1">
-            {#if logo}
-              <img
-                src={logo}
-                alt={title}
-                class="w-6 h-6 rounded-full print:hidden"
-              />
-            {/if}
-            {title}
-          </div>
-        {/if}
+        <div class="flex flex-col gap-1">
+          {#if link}
+            <a
+              href={link}
+              target="_blank"
+              class="inline-flex items-center gap-1 hover:underline"
+            >
+              {#if logo}
+                <img
+                  src={logo}
+                  alt={title}
+                  class="w-6 h-6 print:hidden"
+                />
+              {/if}
+              {title}
+              {#if active} <span class="size-1 rounded-full bg-green-500"></span> {/if}
+            </a>
+          {:else}
+            <div class="flex gap-1">
+              {#if logo}
+                <img
+                  src={logo}
+                  alt={title}
+                  class="w-6 h-6 rounded-full print:hidden"
+                />
+              {/if}
+              {title}
+            </div>
+          {/if}
+          {#if year}
+            <span class="text-xs text-muted-foreground">{year}</span>
+          {/if}
+        </div>
       </CardTitle>
       <div class="hidden font-mono text-xs underline print:visible">
         {link?.replace("https://", "").replace("www.", "").replace("/", "")}
