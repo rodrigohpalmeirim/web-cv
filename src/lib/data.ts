@@ -1,7 +1,7 @@
 export const RESUME_DATA = {
     name: "Rodrigo Palmeirim",
     initials: "RP",
-    location: "Lisbon, Portugal, Earth, WET",
+    location: "Lisbon, Portugal, Earth",
     locationLink: "https://www.google.com/maps/place/Lisbon",
     birthday: "July 14, 2000",
     about:
@@ -39,13 +39,22 @@ export const RESUME_DATA = {
     ],
     work: [
         {
+            company: "Phira Ventures",
+            link: "https://www.phira.ventures/",
+            badges: [],
+            title: "Entrepreneur in Residence",
+            start: "2025",
+            end: "2026",
+            description: "Following the success of the Gira+ project, I got invited by Phira Ventures to join them in their adventurous projects. Here I got to work not only as a fullstack developer, but to be involved in all the necessary steps for the creation and maintenance of real products.",
+        },
+        {
             company: "Truewind - now Axians",
             link: "https://www.axians.pt/",
             badges: ["Full-stack"],
             title: "Developer",
             start: "2024",
             end: "2024",
-            description: "After my internship, I was hired as a developer at Truewind (which has since been acquired by Axians), where I work in research and in the development of full-stack applications.",
+            description: "After my internship, I was hired as a developer at Truewind (which has since been acquired by Axians), where I worked in research and in the development of full-stack applications.",
         },
         {
             company: "Truewind",
@@ -78,39 +87,44 @@ export const RESUME_DATA = {
     projects: [
         {
             title: "Gira+",
-            techStack: [
-                "TypeScript",
-                "SvelteKit",
-                "TailwindCSS",
-                "maplibre-gl",
-                "Capacitor"
-            ],
+            techStack: [ "TypeScript", "SvelteKit", "TailwindCSS", "maplibre-gl", "Capacitor" ],
             description: "Alternative for Lisbon's public bike sharing system's official app, with a focus on speed, reliability and clean UI.",
-            logo: "https://raw.githubusercontent.com/rt-evil-inc/gira/main/assets/icon.svg",
+            logo: "https://raw.githubusercontent.com/rt-evil-inc/gira-mais/main/assets/icon.svg",
             link: {
-                label: "github/rt-evil-inc/gira",
-                href: "https://github.com/rt-evil-inc/gira",
+                href: "https://gira-mais.app",
             },
             year: "2023-now",
         },
         {
-            title: "Automaton Simulator",
-            techStack: [ "React.js" ],
-            description: "A web app that allows you to create, simulate and visualize Turing machines. It aims to be a simple and intuitive tool for students and enthusiasts of automata theory.",
-            logo: "https://raw.githubusercontent.com/rodrigohpalmeirim/automaton-simulator/master/public/logo-small.png",
+            title: "OpenStand",
+            techStack: [ "TypeScript", "React", "PWA", "pdf.js", "Cloudflare Workers" ],
+            description: "An open-source sheet music reader, library and performance tool. Setlists, annotations, ChordPro, hands-free page turning with pedals, MIDI or face gestures, and sync between devices.",
+            logo: "https://raw.githubusercontent.com/rodrigohpalmeirim/openstand/main/public/favicon.svg",
             link: {
-                href: "https://rodrigohpalmeirim.github.io/automaton-simulator/",
+                href: "https://openstand.rodlabs.dev",
             },
-            year: "2020",
+            year: "2026",
         },
         {
             title: "Movie Night",
-            techStack: [ "SvelteKit", "TailwindCSS", "socket.io", "WebTorrent" ],
-            description: "A web app that allows you to watch movies with friends in real-time with a synchronized player. It uses WebTorrent for peer-to-peer streaming and socket.io for real-time communication. (Currently in development)",
+            techStack: [ "SvelteKit", "TailwindCSS", "Drizzle", "SQLite" ],
+            description: "A definitely not overengineered app for choosing what to watch on movie nights with friends. Everyone swipes through a shared pool of films, and the app turns that into a shortlist, a veto round and a head-to-head runoff.",
+            logo: "https://raw.githubusercontent.com/rodrigohpalmeirim/movie-night/main/static/icon-rounded.svg",
             link: {
                 href: "https://movie-night.rodlabs.dev/",
             },
-            year: "2020-2021",
+            year: "2026",
+        },
+        {
+            title: "Patchbay",
+            techStack: [ "Rust", "Tauri", "Svelte", "SSH/SFTP" ],
+            description: "A friendly cross-platform desktop app for working with your machines over SSH: browse and transfer files, forward ports and open terminals, all in one window.",
+            logo: "https://raw.githubusercontent.com/rodrigohpalmeirim/patchbay/main/assets/logo.svg",
+            link: {
+                label: "github/rodrigohpalmeirim/patchbay",
+                href: "https://github.com/rodrigohpalmeirim/patchbay",
+            },
+            year: "2026",
         },
         {
             title: "Trip Finder",
@@ -131,16 +145,6 @@ export const RESUME_DATA = {
             },
             active: false,
             year: "2020",
-        },
-        {
-            title: "Passhash",
-            techStack: [ "HTML", "CSS", "JavaScript" ],
-            description: "A simple cool-looking web app for generating secure passwords by hashing simpler passwords.",
-            logo: "https://passhash.rodlabs.dev/favicon.ico",
-            link: {
-                href: "https://passhash.rodlabs.dev",
-            },
-            year: "2022",
         },
     ],
 } as const;
